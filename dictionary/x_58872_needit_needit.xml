@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="41b5835207861110312bff208c1ed061" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="Legal" label="Request type" mandatory="true" max_length="40" name="request_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="-- New choice --" value="-- New choice --"/>
+                <element inactive_on_update="false" label="Facilities" value="facilities"/>
+                <element inactive_on_update="false" label="Human Resources" value="hr"/>
+                <element inactive_on_update="false" label="Legal" value="legal"/>
+                <element inactive_on_update="false" label="Walmart notice of behavioral routine documents" value="walmart_notice_of_behavioral_routine_documents"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="legal1" label="What needed" max_length="40" name="what_needed" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Centre de recherche en microbiologie moléculaire de l'est de l'Anse-Aux-Loires / Euraristre Lantier" value="cdremmdledlaal_el"/>
+                <element inactive_on_update="false" label="Centre de recherche en microbiologie moléculaire de l'est de l'Anse-Aux-Loires / Euraristre Lantier2" value="cdremmdledlaal_el2"/>
+                <element inactive_on_update="false" label="Facilities 1" value="facilities1"/>
+                <element inactive_on_update="false" label="Facilities 2" value="facilities2"/>
+                <element inactive_on_update="false" label="Human resources 1" value="h1"/>
+                <element inactive_on_update="false" label="Human resources 2" value="hr2"/>
+                <element inactive_on_update="false" label="Legal 1" value="legal1"/>
+                <element inactive_on_update="false" label="Legal 2" value="legal2"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="When needed" mandatory="true" max_length="40" name="when_needed" type="glide_date_time"/>
+    </element>
+</database>
